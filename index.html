@@ -66,8 +66,6 @@
                 z-index: 9999;
                 animation: fadeOut 1s ease-out;
             }
-          
-            /* Animasi fade in untuk loading screen */
             @keyframes fadeOut {
                 0% {
                     opacity: 0;
@@ -76,7 +74,6 @@
                     opacity: 1;
                 }
             }
-          
             #loading-logo {
                 width: 60px; 
                 height: auto;
@@ -91,16 +88,13 @@
                 100% {
                     transform: rotate(360deg);
                 }
-            }
-          
+            }   
             #content {
                 display: none;
                 padding: 20px;
                 text-align: center;
                 font-family: 'Arial', sans-serif;
             }
-          
-      
             @keyframes fadeContent {
                 0% {
                     opacity: 0;
@@ -109,35 +103,23 @@
                     opacity: 1;
                 }
             }
-          
           </style>
           </head>
           <body>
-
-
-            
-          <!-- Loading Spinner -->
           <div id="loading-screen">
             <img src="https://lh4.googleusercontent.com/jOk9r6xPgtJ4JHVdxZyCyn5I42MOpusKad7TBaEAzE3o1WDrYspop5RzjwZuU8iTtx51ATMHmid8czlQJ48YV20=w1280" alt="Logo" id="loading-logo">
           </div>
-          
-          
           <script>
-            // Menghilangkan loading screen setelah 3 detik (durasi loading)
             window.addEventListener('load', function () {
                 setTimeout(function () {
-                    // Menyembunyikan loading screen dan menampilkan konten
+
                     document.getElementById('loading-screen').style.display = 'none';
                     document.getElementById('content').style.display = 'block';
-                    // Menambahkan efek transisi pada konten
+
                     document.getElementById('content').style.animation = 'fadeContent 1s ease-out';
-                }, 700); // Durasi loading 3 detik
+                }, 700); 
             });
           </script>
-
-
-
-        <!-- Basic features section-->
         <section class="bg-light">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -145,18 +127,13 @@
                         <h2 class="display-4 lh-1 mb-4"></h2>
                         <h2 class="display-4 lh-1 mb-4">Langkah Awal Membangun Pondasi Keluarga Sakinah</h2>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">Bimcat adalah aplikasi bimbingan calon pengantin untuk menguji kesiapan nikah secara emosional, mental, dan spiritual.</p>
-                        <!-- Gambar kecil ditambahkan di bawah paragraf -->
-              
             </div>
-                   
-                    
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid " src="https://lh6.googleusercontent.com/oUqPbcFYpcBp44PoOESk9P-2qTeiN4uWtRNye4ddX1u7hrNTdJoNAzSEh6f9WnpjrXAGOvNvJxIu8d_LB7NZbFvhrM70NIeL1lvI_K2RYqNGaMSSdyO0yFQvSLw6uhA_=w1280" alt="..." /></div>
                     </div>
                 </div>
             </div>
         </section>
-  <!-- Quote/testimonial aside-->
 <aside class="text-center bg-gradient-primary-to-secondary py-4">
     <div class="container px-4 px-lg-5">
       <div class="row gx-5 justify-content-center">
@@ -168,8 +145,6 @@
       </div>
     </div>
   </aside>
-  
-  <!-- Typing effect script -->
   <script>
     const text = '“Pernikahan adalah ibadah terpanjang. Niatkan karena Allah, maka setiap langkah akan bernilai pahala.”';
     const target = document.getElementById("typingText");
@@ -179,16 +154,11 @@
       if (index < text.length) {
         target.innerHTML += text.charAt(index);
         index++;
-        setTimeout(type, 40); // Kecepatan mengetik (ms)
+        setTimeout(type, 40); 
       }
     }
-  
-    // Mulai mengetik setelah halaman dimuat
     window.addEventListener("DOMContentLoaded", type);
   </script>
-  
-
-<!-- Video section -->
 <section class="bg-light py-5" id="video" data-aos="fade-up">
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -196,7 +166,6 @@
           <h2 class="fw-bolder">Prosedur Pernikahan</h2>
           <p class="lead mb-4">Tahapan dan prosedur yang harus dilalui oleh calon pengantin sebelum melangsungkan pernikahan di KUA. 
             Mulai dari pendaftaran, berkas yang diperlukan, hingga proses bimbingan pranikah.</p>
-          
         </div>
         <div class="col-12 col-lg-6">
           <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
@@ -212,10 +181,6 @@
       </div>
     </div>
   </section>
-  
-
-        
-        <!-- App features section-->
         <section id="features">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
@@ -232,18 +197,15 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
-                                    <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-chat-dots icon-feature text-gradient d-block mb-3"></i>
-
                                         <h3 class="font-alt">Komunikasi yang Baik</h3>
                                         <p class="text-muted mb-0">Saling terbuka, jujur, dan menghargai dalam berbicara serta menyelesaikan masalah.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 mb-5 mb-md-0">
-                                    <!-- Feature item-->
+                                <div class="col-md-6 mb-5 mb-md-0">                        
                                     <div class="text-center">
                                         <i class="bi-people icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Tanggung Jawab dan Peran Jelas</h3>
@@ -251,7 +213,6 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-heart icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Kasih Sayang dan Saling Menghormati</h3>
@@ -261,15 +222,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 order-lg-0">
-
-                        <!-- video section-->
-
-
-
-
-                        
-                        <!-- Features section device mockup-->
+                    <div class="col-lg-4 order-lg-0">       
+                        <!-- mockup-->
                         <div class="features-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -278,11 +232,11 @@
                                         <stop class="gradient-end-color" offset="100%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50"></circle></svg>
+                            <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg>
+                            <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
                             <div class="device-wrapper">
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
